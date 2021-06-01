@@ -23,7 +23,7 @@
 	<?php
 } ?>
 
-<p>Hello <?php $_SESSION['username']; ?></p>
+<p>Hello <?php echo $_SESSION['username']; ?></p>
 <br><br>
 <a href="<?php echo base_url(); ?>index.php/auth/logout">Logout</a>
 </div>
