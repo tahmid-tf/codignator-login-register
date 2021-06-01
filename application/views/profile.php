@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login Page</title>
+	<title>Profile Page</title>
 
 	<!-- Bootstrap -->
 	<link href="<?php echo base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
@@ -22,26 +22,10 @@
 	</div>
 	<?php
 } ?>
-<?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
 
-<div class="col-lg-5 col-lg-offset-2">
-	<form action="" method="POST">
-
-		<div class="form-group">
-			<label for="username">Username:</label>
-			<input type="text" class="form-control" name="username" id="username">
-		</div>
-
-		<div class="form-group">
-			<label for="password">Password:</label>
-			<input type="password" class="form-control" name="password" id="password">
-		</div>
-
-		<div>
-			<button class="btn btn-primary" name="login">Login</button>
-		</div>
-	</form>
-
+<p>Hello <?php $_SESSION['username']; ?></p>
+<br><br>
+<a href="<?php echo base_url(); ?>index.php/auth/logout">Logout</a>
 </div>
 
 
